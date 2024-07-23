@@ -5,6 +5,10 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
+  tls:
+    - hosts:
+        - www.mari0nette.com
+      secretName: ticketing-tls
   ingressClassName: nginx
   rules:
     - host: www.mari0nette.com
