@@ -16,11 +16,6 @@ spec:
         - name: payments
           image: abilityjlr/payments
           env:
-            - name: TLS_SECRET_NAME
-              valueFrom:
-                secretKeyRef:
-                  name: tls-secret
-                  key: TLS_SECRET_NAME
             - name: NATS_CLIENT_ID
               valueFrom:
                 fieldRef:
