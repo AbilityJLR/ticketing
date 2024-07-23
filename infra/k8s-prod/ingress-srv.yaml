@@ -8,7 +8,7 @@ spec:
   tls:
     - hosts:
         - www.mari0nette.com
-      secretName: ticketing-tls
+      secretName: $(TLS_SECRET_NAME)
   ingressClassName: nginx
   rules:
     - host: www.mari0nette.com
