@@ -1,2 +1,5 @@
 node_modules
 .DS_Store
+issuer.yaml
+certificate.yaml
+cert-manager.yaml
