@@ -15,7 +15,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-proxy-protocol: "false"
 spec:
   rules:
-    - host: www.yourdomain.com # Replace with your actual domain
+    - host: www.mari0nette.com # Replace with your actual domain
       http:
         paths:
           - path: /api/payments/?(.*)
@@ -61,7 +61,7 @@ metadata:
   namespace: ingress-nginx
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "false"
-    service.beta.kubernetes.io/do-loadbalancer-hostname: "www.yourdomain.com" # Replace with your actual domain
+    service.beta.kubernetes.io/do-loadbalancer-hostname: "www.mari0nette.com" # Replace with your actual domain
 spec:
   type: LoadBalancer
   externalTrafficPolicy: Local
@@ -124,4 +124,3 @@ spec:
             - name: https
               containerPort: 443
               protocol: TCP
-
